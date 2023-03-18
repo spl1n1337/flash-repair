@@ -166,6 +166,7 @@ img {
     margin-bottom: 10px;
 }
 .aside-title {
+    width: 100%;
     font-size: 15px;
     font-weight: 600;
     line-height: 1.75rem;
@@ -664,6 +665,7 @@ img {
 }
 .aside-item {
     margin-bottom: 30px;
+    width: 100%;
     .descr {
         margin-bottom: 0;
         font-size: 14px;
@@ -703,6 +705,7 @@ img {
     margin-right: 20px;
     position: relative;
     margin-bottom: 5px;
+    opacity: 0.8;
     &::after {
         content: '→';
         position: absolute;
@@ -717,5 +720,23 @@ img {
         &::after {
             right: -20px;
         }
+    }
+}
+
+.aside-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+        margin: 10px 0;
+    }
+    .descr {
+        font-size: 12px;
+        text-align: left;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .aside-link {
+        justify-self: end;
     }
 }
