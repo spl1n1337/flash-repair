@@ -10,3 +10,8 @@ setInterval(function() {
     slides.eq(i).fadeIn(500);
   });
 }, 4000);
+
+$('.prevent').click(function (e) { 
+  e.preventDefault();  
+  console.log(this);
+});

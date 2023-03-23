@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1">
+    <meta name="keywords" content="1">
+    <title>Flash repair | Восстановление RAID массивов</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+
+        <header class="header">
+            <div class="top-banner">
+                <a href="index.html" class="logo"><img src="img/icons/wd-logo.png" alt="logo" title="logo" class="logo-img"></a>
+                <div class="top-info">
+                    <a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a>
+                    <a href="#" class="top-info__addres">Лубянский проезд 15/2, офис 213</a>
+                </div>
+            </div>
+            <nav class="top-nav">
+                <div class="container">
+                    <ul>
+                        <li><a href="dostavka.html">Заказать доставку</a></li>
+                        <li><a href="tech.html">Оборудование</a></li>
+                        <li><a href="clients.html">Наши клиенты</a></li>
+                        <li><a href="price.html">Цены</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#" class="prevent" onclick="return false">Восстановление данных</a>
+                            <ul>
+                                <li><a href="hdd.html">Жесткие диски</a></li>
+                                <li><a href="raid.html">RAID массивы</a></li>
+                                <li><a href="ssd.html">SSD носители</a></li>
+                                <li><a href="flash.html">USB флешки</a></li>
+                                <li><a href="card.html">Карты памяти</a></li>
+                                <li><a href="vosstanovlenie_vneshnego_zhestkogo_diska.html">Внешние диски</a></li>
+                                <li><a href="vosstanovlenie_dannyh_mac.html">Apple iMac / MacBook</a></li>
+                                <li><a href="raid.html">Сетевые диски NAS</a></li>
+                                <li><a href="virtual_machine.html">Виртуальные машины</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="prevent">Информация</a>
+                            <ul>
+                                <li><a href="">Программы и утилиты</a></li>
+                                <li><a href="">Конфиденциальность</a></li>
+                                <li><a href="">Юридическим лицам</a></li>
+                                <li><a href="">Команда экспертов</a></li>
+                                <li><a href="">Работа с регионами</a></li>
+                                <li><a href="">Вопросы и ответы</a></li>
+                                <li><a href="">Отзывы клиентов</a></li>
+                                <li><a href="">Наши вакансии</a></li>
+                                <li><a href="">Статьи и обзоры</a></li>
+                                <li><a href="">Наши реквизиты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- MAIN TAG START -->
+        <main class="main">
+<!-- ASIDE LEFT START -->
+            <aside class="aside-left">
+                <div class="aside-brands">
+                    <h2 class="aside-title">Производители</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <div class="aside-brands-wrapper">
+                        <a class="aside-brands-item" href=""><img src="img/brands/wd2.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/seagate2.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/hitachi2.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/samsung2.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/maxtor-aside.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/fujitsu2.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/toshiba.png" alt="" title=""></a>
+                        <a class="aside-brands-item" href=""><img src="img/brands/ibm.png" alt="" title=""></a>
+                    </div>
+                </div>
+                <div class="aside-banner">
+                    <a href="">
+                        <img src="img/brands/partners.png" alt="">
+                    </a>
+                </div>
+                <div class="aside-item">
+                    <div class="warranty-left-container">
+                        <a href="" class="warranty-left-container__item">
+                            <div class="warranty-left-container__item-img">
+                                <img src="img/icons/lock.svg" alt="">
+                            </div>
+                            <p class="descr">Гарантия конфиденциальности информации</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-item">
+                    <div class="warranty-left-container">
+                        <a href="" class="warranty-left-container__item">
+                            <div class="warranty-left-container__item-img">
+                                <img src="img/icons/doc.svg" alt="">
+                            </div>
+                            <p class="descr">Полный комплект документации для юридических лиц</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-item aside-social">
+                    <div class="descr">Мы в социальных сетях:</div>
+                    <div class="aside-social-container">
+                        <a href="" class="social-item"><img src="img/brands/vk.svg" alt=""></a>
+                        <a href="" class="social-item"><img src="img/brands/fb.svg" alt=""></a>
+                        <a href="" class="social-item"><img src="img/brands/habr.svg" alt=""></a>
+                        <a href="" class="social-item"><img src="img/brands/twitter.svg" alt=""></a>
+                        <a href="" class="social-item"><img src="img/brands/inst.svg" alt=""></a>
+                        <a href="" class="social-item"><img src="img/brands/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="aside-item">
+                    <div class="descr">Принимаем к оплате<br>банковские карты</div>
+                    <div class="payment"><img src="img/icons/visa-mastercard2.png" alt=""></div>
+                </div>
+                <div class="aside-item">
+                    <div class="descr">Сертификация<br>ГОСТ Р ИСО 9001-2015<br>(ISO 9001:2015)</div>
+                    <a href=""><div class="payment"><img src="img/icons/ISO_9001.png" alt=""></div></a>
+                </div>
+<!-------------------------------- ASIDE LEFT END -------------------------------->
+            </aside>
+
+<!-- MAIN CONTENT START -->
+            <div class="main-content raid">
+
+                <div class="hero">
+                    <h1 class="main-title">Восстановление данных с флешки</h1>
+                    <h2 class="title-small">Как восстановить данные с флешки если она не определяется</h2>
+                        <p align="justify">
+                            <img align="right" title="восстановление жесткого диска" style="width: auto; margin-left: 1rem;" src="img/image/flash_icon.png" alt="восстановление жесткого диска">
+                            Лаборатория Storelab выполняет профессиональный ремнот флешек, а также последующиее восстановление информации после любых программных и механических повреждений. Таких как неисправность контроллера, отломанных разъемов, разрушение транслятора и других. Когда флешка не определяется компьютером, просит отформатировать, показывает RAW формат, нулевой объем, и не дает доступ к данным. Уникальное оборудование позволяет нам успешно провести ремонт и восстанавливать данные даже с монолитных флеш устройств и microSD карт памяти, где контроллер технически выполнен на одной микросхеме с памятью, и выпаять отдельно чип памяти не представляется возможным.
+                        </p>
+                </div>
+
+                <div class="post-container promo-ssd">
+
+                    <h2 class="title-small">
+                        Восстановление данных с флешки в самой мощной лаборатории Москвы
+                    </h2>
+
+                    <div class="grid">
+                        <div class="grid-item">
+                          <img src="img/image/flash_img1s.png" alt="image 1" />
+                          <p>
+                            Поддерживаем все USB флешки
+                        </p>
+                        </div>
+                        <div class="grid-item">
+                          <img src="img/image/flash_img2s.png" alt="image 2" />
+                          <p>
+                            Комплекс PC-3000 Flash
+                         </p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/image/flash_img3s.png" alt="image 2" />
+                            <p>
+                                Адаптер Circuit Board
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container third-block" style="margin-top:30px">
+                    <h2 class="title-small">Работаем со всеми моделями и производителями USB Flash</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                          <a href="" class="prevent"><img src="img/image/flash_img1.jpg" alt="image 2"></a>
+                            <a href="#" class="text-link prevent">Transcend<span>&nbsp;&nbsp;→</span></a>
+                        </div>
+                        <div class="grid-item">
+                          <a href="" class="prevent"><img src="img/image/flash_img2.jpg" alt="image 3"></a>
+                            <a href="#" class="text-link prevent">Kingston<span>&nbsp;&nbsp;→</span></a>
+                        </div>
+                        <div class="grid-item">
+                          <a href="" class="prevent"><img src="img/image/flash_img3.jpg" alt="image 4"></a>
+                            <a href="#" class="text-link prevent">Adata<span>&nbsp;&nbsp;→</span></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="prevent"><img src="img/image/flash_img4.jpg" alt="image 4"></a>
+                            <a href="#" class="text-link prevent">Silicon Power<span>&nbsp;&nbsp;→</span></a>
+                          </div>
+                          <div class="grid-item">
+                            <a href="" class="prevent"><img src="img/image/flash_img5.jpg" alt="image 2"></a>
+                              <a href="#" class="text-link prevent">Corsair<span>&nbsp;&nbsp;→</span></a>
+                          </div>
+                          <div class="grid-item">
+                            <a href="" class="prevent"><img src="img/image/flash_img10.jpg" alt="image 3"></a>
+                              <a href="#" class="text-link prevent">SanDisk<span>&nbsp;&nbsp;→</span></a>
+                          </div>
+                          <div class="grid-item">
+                            <a href="" class="prevent"><img src="img/image/flash_img11.jpg" alt="image 4"></a>
+                              <a href="#" class="text-link prevent">Smartbuy<span>&nbsp;&nbsp;→</span></a>
+                          </div>
+                          <div class="grid-item">
+                              <a href="" class="prevent"><img src="img/image/flash_img12.jpg" alt="image 4"></a>
+                              <a href="#" class="text-link prevent">Noname<span>&nbsp;&nbsp;→</span></a>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="post-container second-block">
+
+                    <h2 class="title-small">Адаптеры для микросхем позволяют нам восстановить любую флешку</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div><img src="img/image/TSOP-48s.png" alt="image 1"></div>
+                            <div class="text-link">TSOP-48s<span>&nbsp;&nbsp;→</span></div>
+                        </div>
+                        <div class="grid-item">
+                          <div><img src="img/image/TSOP-56s.png" alt="image 2"></div>
+                            <div class="text-link">TSOP-56s<span>&nbsp;&nbsp;→</span></div>
+                        </div>
+                        <div class="grid-item">
+                          <div><img src="img/image/LGA-TLGA52s.png" alt="image 3"></div>
+                            <div class="text-link">LGA-TLGA52s<span>&nbsp;&nbsp;→</span></div>
+                        </div>
+                        <div class="grid-item">
+                          <div><img src="img/image/BGA-152s.png" alt="image 4"></div>
+                            <div class="text-link">BGA-152s<span>&nbsp;&nbsp;→</span></div>
+                        </div>
+                        <div class="grid-item">
+                            <div><img src="img/image/VBGA-100s.png" alt="image 4"></div>
+                            <div class="text-link">VBGA-100s<span>&nbsp;&nbsp;→</span></div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="post-container price-page">
+                    <div class="title-small">Стоимость восстановления данных флешек</div>
+                    <table class="price">
+                        <tbody>
+                            <tr class="first-tr">
+                                <th>Восстановление данных USB флешек и карт памяти</th>
+                                <th width="100">
+                                    <div>Стоимость</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td><a href="https://storelab-rc.ru/raw.htm" class="mylink3">Логические неисправности</a> (удаление, просит
+                                    отформатировать, перезапись, формат RAW)</td>
+                                <td>
+                                    <div align="center"><span>1500 - 2000 руб.</span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://storelab-rc.ru/flash.htm" class="mylink3">Нарушение трансляции контроллера</a>
+                                    (определяется как неизвестное устройство, нулевой объем)</td>
+                                <td>
+                                    <div align="center"><span>2000 - 3000 руб.</span></div>
+                                </td>
+                            </tr>
+                    
+                    
+                            <tr>
+                                <td><a href="https://storelab-rc.ru/flash.htm" class="mylink3">Ошибки чтения чипов памяти</a> (MLC, TLC, SLC
+                                    - Intel, Micron, Hynix, Samsung, Toshiba, Sandisk) </td>
+                                <td>
+                                    <div align="center"><span>3000 - 4000 руб.</span></div>
+                                </td>
+                            </tr>
+                    
+                            <tr>
+                                <td><a href="https://storelab-rc.ru/flash.htm" class="mylink3"> Неисправность контроллера</a> (не
+                                    определяется, не читается, неизвестное устройство, нулевой объем)</td>
+                                <td>
+                                    <div align="center"><span>от 3000 руб.</span></div>
+                                </td>
+                            </tr>
+                    
+                    
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="hero">
+                    <h2 class="title-small">Почему флешки выходят из строя</h2>
+                        <p align="justify">
+                            <img class="border-black" align="right" title="восстановление жесткого диска" style="width: auto; margin-left: 1rem;" src="img/image/broken_flash.png" alt="восстановление жесткого диска">
+                            Отказы флешек встречаются довольно часто, могут быть без видимых причин: это может быть некорректное извлечение флеш-накопителя, сгоревшим контроллером от перепада напряжения, так же довольно часто встречаются флеш-накопители с noname микросхемами памяти, которые отказывают от времени. Наша лаборатория произовдит ремонт флешек любого объема и производителя, а также восстанавливает ценные для вас данные. Сначала выпаивается микросхема, далее через специальный переходник подключается к PC-3000 Flash Reader, снимается копия образа, данные, после чего из полученного образа информация расшифровывается в виде файлов, в следствие чего происходит восстановление данных.
+                        </p>
+                </div>
+                
+                <div class="hero">
+                    <h2 class="title-small">Как мы проводим восстановление информации?</h2>
+                        <p align="justify">
+                            <img class="border-black" align="right" title="восстановление жесткого диска" style="width: auto; margin-left: 1rem;" src="img/image/flash_rec.png" alt="восстановление жесткого диска">
+                            Отказы флешек встречаются довольно часто, могут быть без видимых причин: это может быть некорректное извлечение флеш-накопителя, сгоревшим контроллером от перепада напряжения, так же довольно часто встречаются флеш-накопители с noname микросхемами памяти, которые отказывают от времени. Наша лаборатория произовдит ремонт флешек любого объема и производителя, а также восстанавливает ценные для вас данные. Сначала выпаивается микросхема, далее через специальный переходник подключается к PC-3000 Flash Reader, снимается копия образа, данные, после чего из полученного образа информация расшифровывается в виде файлов, в следствие чего происходит восстановление данных.
+                        </p>
+                </div>
+
+                <div class="post-container data-recovery-block">
+                    <h2 class="title-small">Почему теряются данные на флешках</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <img src="img/image/pc3000_flash_s.png" alt="" class="border-black">
+                            <div class="descr">
+                                Логические неисправности. Случайное удаление файлов или быстрое форматирование, ошибки программного обеспечения, сбой файловой системы, формат RAW или нулевой объем. Электрическая часть флеш накопителя исправна. Иногда может сбоить файловая система FAT при некорректном извлечении. Во всех этих случаях восстановление выполняется на комплексе PC-3000 Data Extractor. Производится полное сканирование всей области, где находится информация с флэш-накопителя, исправляем ошибки файловой системы, составляем карту данных, затем достаем пользовательские файлы. Как правило, получается произвести восстановление всего объема данных, после флешкой можно пользоваться в дальнейшем.
+                            </div>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/image/flash1s.jpg" alt="" class="border-black">
+                            <div class="descr">Электрические повреждения. Флешку перестает определять компьютер, но не имеет видимых механических повреждений - также необходим ремонт. Большой процент USB флешек выходит из строя из за скачков напряжения или статического электричества. После пробоя платы выходят из строя диоды, конденсаторы и другие элементы, информация становиться недоступна. Ремонт флэшки в таком случае возможно несколькими способами. В самых простых, после проверки электрических элементов платы можно вернуть работоспособность накопителя, например, заменив диод. Там где электроника повреждена полностью, мы выпаиваем чип памяти с платы, далее на комплексе выполняем ремонт флешки.</div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/image/flash4s.jpg" alt="" class="border-black">
+                            <div class="descr">Неисправность контроллера Контроллер флэш-накопителя отвечает за распределение информации по микросхемам памяти, а так же за скорость передачи данных между ними и интерфейсом компьютера. В случае сбоя контроллера устройство выдает ошибку чтения или перестает определяться компьютером. Ремонт и восстановление производится выпаиванием микросхем и считыванием. После чего требуется подбор алгоритма контроллера, так как вся информация разбита по чипам памяти, иногда зашифрована. Для этого подходят многие стандартные алгоритмы PC-3000 а под редкие флешки алгоритм пишется нашими программистами.</div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/image/flash2s.jpg" alt="" class="border-black">
+                            <div class="descr">Механические повреждения. Сломанные флешки, отломанные USB контакты, механически поврежденные карты памяти довольно частые гости в нашей лаборатории. Главное условие успешного ремонта, также последующего восстановления потерянных данных - это целая микросхема памяти. Если чип поврежден восстановить информацию уже невозможно. Если отломан разьем USB флешки, в некоторых случаях возможно его припаять и скопировать информацию. В остальных случаях поможет только выпаивание чипа, а затем последующая расшифровка на программаторе. ремонта и восстановления любых микросхем, а также лучшие специалисты, к тому же на ремонт флешки цена ниже чем у конкурентов!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container tenth-block">
+                    <h2 class="title-small">
+                        Лучшие специалисты по восстановлению данных в Москве
+                    </h2>
+                    <div class="grid">
+                        
+                        <div class="grid-item">
+                          <img src="img/image/sec10.png" alt="image 1">
+                          <p class="name">Александр Гуревич</p>
+                          <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                        </div>
+                      
+                        <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                      
+                          <div class="grid-item">
+                            <img src="img/image/sec10.png" alt="image 1">
+                            <p class="name">Александр Гуревич</p>
+                            <p class="exp">Инженер <br>
+                              опыт работы 14 лет</p>
+                          </div>
+                                            
+                    </div>
+                </div>
+
+                <div class="post-container seventeenth-block letters">
+                    <h2 class="title-small">Нам доверяют восстановление данных</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-11.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-12.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-31.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-32.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-41.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-42.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-51.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-52.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-61.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-62.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-71.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-72.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-81.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-82.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="" class="case-img"><img src="img/image/sec18-21.png" alt=""></a>
+                            <div class="case-content">
+                                <div class="case-title"><img src="img/image/sec18-22.png" alt=""></div>
+                                <div class="case-descr">
+                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="grid-item">
+                            <a href="#" class="text-link">Смотреть другие наши работы<span>&nbsp;&nbsp;→</span></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="post-container fifteenth-block">
+                    <h2 class="title-small">Узнайте больше о восстановлении данных - наш YouTube канал</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <p class="descr">
+                                На YouTube канале мы подробно рассказываем и показываем как происходят процессы восстановления данных с жестких дисков, RAID массивов, флешек, карт памяти и других носителей в нашей лаборатории. Для чего нужны запчасти диски доноры при восстановлении информации. Так же приводим обзоры и статистику. Рейтинг надежности жестких дисков основных производителей, что поможет вам выбрать лучший новый жесткий диск для ваших задач. Или просто быть в курсе событий и последних новостей в области восстановления данных. Подписывайтесь и узнавайте больше о восстановлении данных.
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/image/sec9.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/--V35wcrrco?controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/--V35wcrrco?controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/--V35wcrrco?controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="grid-item">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/--V35wcrrco?controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container seventh-block">
+                    <h2 class="title-small">Закажите восстановление данных прямо сейчас</h2>
+                    
+                    <div class="grid">
+                        <div class="grid-item">
+                            <img src="img/image/sec7.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <p class="descr">
+                                Если у вас нет возможности приехать к нам - <a href="dostavka.html">Закажите бесплатную доставку курьером по Москве и Московской области</a> и получите скидку 15% на восстановление данных. Ежедневно можно заказать доставку нашим штатным курьером. Который привезет жесткий диск к нам в сервисный центр на диагностику и восстановление данных. Возможна и обратная доставка из лаборатории до указанного вами адреса. Перевозка осуществляется в специальной сумке, предназначенной для безопасной транспортировки дисков. Курьер может приехать к вам домой или в офис в удобное время
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container grid tech-benefits">
+                    <div class="title-small">Почему для восстановления данных выбирают нас</div>
+                    <div class="benefits-item">
+                        <div class="benefits-img">
+                            <img src="img/icons/tech-checkmark.svg" alt="">
+                        </div>
+                        <div class="descr">
+                            Storelab — это крупнейшая лаборатория в Москве. Вас обслуживают инженеры, которые знают и любят свою работу. Мы работаем без предоплат. В любое время с радостью ответим на все ваши вопросы. Звоните круглосуточно: <a href="tel:+74952150024">+7 (495) 215-00-24</a>.
+                        </div>
+                    </div>
+                    <div class="title-small">Как проводится диагностика</div>
+                    <div class="benefits-item">
+                        <div class="benefits-img">
+                            <img src="img/icons/tech-timer.svg" alt="">
+                        </div>
+                        <div class="descr">
+                            Диагностика бесплатная, занимает примерно 10 - 15 минут. Далее специалист расскажет вам неисправность, <a href="">стоимость</a> и сроки работ по восстановлению данных. Если у вас нет возможности приехать к нам - <a href="dostavka.html">Закажите бесплатную доставку.</a>
+                        </div>
+                    </div>
+                    <div class="title-small">Как к нам проехать</div>
+                    <div class="benefits-item">
+                        <div class="benefits-img">
+                            <img src="img/icons/tech-map.svg" alt="">
+                        </div>
+                        <div class="descr">
+                            Работаем ежедневно, находимся в минуте ходьбы от метро Китай-город
+                            по адресу Лубянский проезд 15/2, подъезд 4, офис 213 <a href="contacts.html">[ Схема проезда ]</a>
+                            Время работы: по будням с 9:00 до 21:00 в выходные с 9:00 до 19:00.     Если вы на машине у нас есть <a href="contacts.html">бесплатная парковка.</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+<!------------------------------------------------- MAIN CONTENT END --------------------------------------------------->
+            </div>
+
+
+
+
+<!--------------------------------------------------- ASIDE RIGHT START ------------------------------------------------>
+            <aside class="aside-right">
+                <div class="aside-item">
+                    <h2 class="aside-title">Наши&nbsp;преимущества</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <div class="aside-benefits">
+                        <a href="" class="aside-link">Крупнейшая&nbsp;компания</a>
+                        <a href="" class="aside-link">Рядом&nbsp;с&nbsp;метро</a>
+                        <a href="" class="aside-link">Бесплатная&nbsp;парковка</a>
+                        <a href="dostavka.html" class="aside-link">Доставка&nbsp;бесплатно</a>
+                        <a href="" class="aside-link">Комплексы&nbsp;РС-300 Express</a>
+                        <a href="" class="aside-link">Квалифицированные инжинеры</a>
+                        <a href="" class="aside-link">Гарантия конфиденциальности</a>                    
+                    </div>
+                </div>
+                <div class="aside-item aside-review">
+                    <h2 class="aside-title">Отзывы клиентов</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>  
+                    <div class="aside-review-img">
+                        <img src="img/image/sec18-22.png" alt="" title="">
+                    </div>
+                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
+                    <div class="aside-review-img">
+                        <img src="img/image/sec18-22.png" alt="" title="">
+                    </div>
+                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
+                    <div class="aside-review-img">
+                        <img src="img/image/sec18-22.png" alt="" title="">
+                    </div>
+                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
+                    <a href="" class="aside-link">Все отзывы</a>                    
+                </div>
+                <div class="aside-item aside-news">
+                    <h2 class="aside-title">Новости</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <a href="dostavka.html" class="aside-link">Закажите бесплатную доставку и получите скидку 15%</a>            
+                    <span class="news-data">18 марта 2023</span>
+                    <a href="" class="aside-link">Восстановление данных RAID 1 массива на жестких дисках SAS</a>            
+                    <span class="news-data">16 марта 2023</span>
+                    <a href="" class="aside-link">Интересные случаи из практики по восстановлению данных</a>            
+                    <span class="news-data">14 марта 2023</span>
+                </div>
+                <div class="aside-item aside-news">
+                    <h2 class="aside-title">Статьи и услуги</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <a href="" class="aside-link">Восстановление данных с IPad устройств</a>            
+                    <a href="" class="aside-link">Восстановление информации баз данных</a>            
+                    <a href="" class="aside-link">Восстановление фотографий (JPG, CR2, PNG, RAW)</a>            
+                    <a href="" class="aside-link">Восстановление баз данных SQL</a>            
+                </div>
+                <div class="aside-item aside-news programms">
+                    <h2 class="aside-title">Программы</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <a href="" class="aside-link">GetDataBack NTFS</a>            
+                    <span class="news-data">Наиболее популярная утилита восстановления информации среди всех существующих програм на сегодняшний день.</span>
+                    <a href="" class="aside-link">RStudio</a>            
+                    <span class="news-data">Простая, удобная и многофункциональная программа для восстановления удаленных данных с самых различных накопителей.</span>
+                    <a href="" class="aside-link">Easy Recovery</a>            
+                    <span class="news-data">Качественная программа для восстановления удаленных данных, которая сегодня используется не только специалистами, но и обычными пользователями.</span>
+                </div>
+                <div class="aside-item clients">
+                    <h2 class="aside-title">Наши клиенты</h2>
+                    <div class="pulse">
+                        <div class="pulse-line left-line"></div>
+                        <div class="pulse-line righ-line"></div>
+                    </div>
+                    <div class="clients-wrapper">
+                        <img src="img/image/sec18-12.png" alt="">
+                        <img src="img/image/sec18-22.png" alt="">
+                        <img src="img/image/sec18-32.png" alt="">
+                        <img src="img/image/sec18-42.png" alt="">
+                        <img src="img/image/sec18-52.png" alt="">
+                        <img src="img/image/sec18-62.png" alt="">
+                        <img src="img/image/sec18-72.png" alt="">
+                        <img src="img/image/sec18-82.png" alt="">
+                    </div>
+                </div>
+            </aside>
+<!-- ASIDE RIGHT START -->
+<!-- MAIN TAG START -->    
+    </main>
+
+    <div class="form-container twentysecond-block">
+        <div class="title-small">Остались вопросы? Звоните:<a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a></div>
+    </div>
+
+    <div class="footer-banner">
+        <div class="container">
+            <div class="footer-brands">
+                <div class="footer-brands-item"><img src="img/brands/logo1.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo2.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo3.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo4.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo5.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo6.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo7.png" alt=""></div>
+                <div class="footer-brands-item"><img src="img/brands/logo8.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider">
+    </div>
+
+
+
+<!-------------------------------------------------- FOOTER  ------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__category">
+                <a href="" class="footer__category-title">
+                    Восстановление данных
+                </a>
+                <a href="" class="footer__category-title">
+                    Информация
+                </a>
+                <div class="footer__category-links-column">
+                    <ul>
+                        <li><a href="#" class="aside-link">Крупнейшая&nbsp;компания</a></li>
+                        <li><a href="#" class="aside-link">Жесткие диски</a></li>
+                        <li><a href="#" class="aside-link">RAID массивы</a></li>
+                        <li><a href="#" class="aside-link">SSD носители</a></li>
+                        <li><a href="#" class="aside-link">USB флешки</a></li>
+                        <li><a href="#" class="aside-link">Карты памяти</a></li>
+                        <li><a href="#" class="aside-link">Внешние диски</a></li>
+                        <li><a href="#" class="aside-link">Apple iMac / MacBook</a></li>
+                        <li><a href="#" class="aside-link">Сетевые диски NAS</a></li>
+                        <li><a href="#" class="aside-link">Виртуальные машины</a></li>
+                    </ul>
+                </div>
+                <div class="footer__category-links-column">
+                    <ul>
+                        <li><a href="" class="aside-link">Программы и утилиты</a></li>
+                        <li><a href="" class="aside-link">Конфиденциальность</a></li>
+                        <li><a href="" class="aside-link">Юридическим лицам</a></li>
+                        <li><a href="" class="aside-link">Команда экспертов</a></li>
+                        <li><a href="" class="aside-link">Работа с регионами</a></li>
+                        <li><a href="" class="aside-link">Вопросы и ответы</a></li>
+                        <li><a href="" class="aside-link">Отзывы клиентов</a></li>
+                        <li><a href="" class="aside-link">Наши вакансии</a></li>
+                        <li><a href="" class="aside-link">Статьи и обзоры</a></li>
+                        <li><a href="" class="aside-link">Наши реквизиты</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer__category-links">
+
+                    
+
+                    
+
+                   
+
+                </div> -->
+            </div>
+
+            <div class="footer__clients">
+
+                <div class="footer__clients-title">
+                    Клиентам
+                </div>
+
+                <div class="footer__clients-links">
+                    <ul>
+                        <li><a href="dostavka.html" class="aside-link">Заказать доставку</a></li>
+                        <li><a href="tech.html" class="aside-link">Оборудование</a></li>
+                        <li><a href="clients.html" class="aside-link">Наши клиенты</a></li>
+                        <li><a href="#" class="aside-link">Цены</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__contacts">
+                <div class="footer__contacts-title"><a href="contacts/contacts.html">Контакты</a></div>
+                <div class="footer__contacts-links">
+                    <div class="footer__contacts-link">
+                        <a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a>
+                    </div>
+                    <div class="footer__contacts-link-descr-time">
+                        <a href="#">ежедневно с 8:00 до 23:00</a>
+                    </div>
+                    <div class="footer__contacts-link-descr">
+                        <address><a href="#" class="top-info__addres">Лубянский проезд 15/2, офис 213</a></address>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">© 1995-2023 Storelab. Все права защищены.</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
