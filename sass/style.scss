@@ -1226,6 +1226,7 @@ img.border-black {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 30px;
     img {
         width: auto;
     }
@@ -1241,3 +1242,142 @@ img.border-black {
     background-repeat: no-repeat;
     background-position: left center;
 }
+
+.programms-section {
+    .aside-link {
+        display: inline;
+        font-size: 1rem;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $red;
+        &::after {
+            top: 0;
+        }
+    }
+    .programms-first .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.red-text-link {
+    display: inline;
+    color: $red;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.team {
+    .divider {
+        margin-bottom: 2rem;
+        transform: translateY(15px);
+    }
+}
+
+.team-wrapper {
+    .grid {
+        grid-template-columns: 1fr;
+        .grid-item {
+            flex-direction: row;
+            justify-content: center;
+            .team-photo {
+                flex-shrink: 0;
+                justify-content: center;
+                align-items: center;
+                margin-right: 30px;
+            }
+            .team-name {
+                font-size: 1.5rem;
+                // margin-bottom: 10px;
+            }
+            .team-position {
+                margin-bottom: 10px;
+            }
+            .team-descr {
+                width: 50%;
+            }
+            .position-descr {
+                text-align: left;
+            }
+            .ssd-list {
+                text-align: left;
+            }
+        }
+    }    
+}
+
+
+.regions {
+    .words {
+        margin-bottom: 30px;
+        a {
+            color: $red;
+        }
+    }
+    .towns {
+        a {
+            margin-right: 20px;
+            position: relative;
+            margin-bottom: 5px;
+            opacity: .8;
+            font-size: 14px;
+        }
+    }
+    .sity {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.base {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .base-triger-icon {
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid $red;
+        border-right: 3px solid $red;
+        transform: rotate(45deg);
+        transition: all 0.555s ease-in-out;
+        &.active-triger {
+            transform: rotate(-135deg);
+        }
+    }
+    .base-name {
+        font-size: 1.2rem;
+    }
+    .base-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container {
+            width: 60px;
+            margin-right: 15px;
+        }
+    }
+    .base-triger {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        cursor: pointer;
+        &:hover .base-name {
+            color: $red;
+        }
+    }
+    .base-list {
+        padding-left: 3rem;
+        overflow: hidden;
+        display: none;
+        transition: all 0.555s ease-in-out;
+        a{
+            font-size: 12px;
+        }
+    }
+}
+.main-title {}
+.grid {}
+.grid-item {}
+
+
+
+.base-name {}
