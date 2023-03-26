@@ -59,7 +59,9 @@ img {
     padding: 7px 0;
 }
 .logo {
-    max-width: 150px;
+    img {
+        max-width: 100px;
+    }
 }
 .top-banner {
     margin: 0 auto;
@@ -79,7 +81,8 @@ img {
 }
 .number {
     color: $red;
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: 3px;
 }
 .top-nav {
     outline: none;
@@ -1448,4 +1451,44 @@ img.border-black {
     td {
         padding: 0.8rem;
     }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 10px;
+    }
+    div {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        span {
+            color: $red;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+    }
+}
+.logo-small {
+    justify-content: flex-end;
+    margin-bottom: 6px;
+    transform: translateY(-10px);
+    font-size: 1.1rem !important;
+    span {
+        font-size: 1.1rem !important;
+    }
+    img {
+        max-width: 70px;
+        margin-bottom: 5px;
+    }
+}
+
+#number-small {
+    letter-spacing: normal;
+    color: #e91802;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
