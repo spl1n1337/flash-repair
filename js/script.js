@@ -65,20 +65,6 @@ $(".base-triger").on("click", function(e) {
     });
 
 
-let iframes = document.querySelectorAll('iframe');
-
-function showIframes(items) {
-  console.log('i start')
-  items.forEach((i) => {
-    i.style.display = 'block';
-  });
-  console.log('i\'ll show all')
-}
-
-window.addEventListener('DOMContentLoaded', ()=> {
-  setTimeout(() => showIframes(iframes), 10000);
-});
-
 let images = document.querySelectorAll('img');
 
 images.forEach((img) => {
