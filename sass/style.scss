@@ -1381,3 +1381,40 @@ img.border-black {
 
 
 .base-name {}
+
+
+#thankyou {
+    background-color: #efeeee;
+    box-shadow: 3px 4px 6px 0 rgba(237,227,227,.75);
+    border-radius: 7px;
+    max-width: 800px;
+    padding: 40px 40px 20px;
+    position: fixed;
+    z-index: 21;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    .thankyou-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+.overlay1 {
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:#000;
+    opacity:.5;
+    z-index:20;
+}
+
+iframe {
+    display: none;
+}
