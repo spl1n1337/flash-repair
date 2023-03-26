@@ -65,9 +65,9 @@ $(".base-triger").on("click", function(e) {
     });
 
 
-let images = document.querySelectorAll('img');
+// let images = document.querySelectorAll('img');
 
-images.forEach((img) => {
-  img.setAttribute('loading', 'lazy');
-});
+// images.forEach((img) => {
+//   img.setAttribute('loading', 'lazy');
+// });
 
