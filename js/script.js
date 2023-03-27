@@ -52,7 +52,10 @@ $(".base-triger").on("click", function(e) {
             thankyou.style.display = "none";
             overlay1.style.display = "none";
             // Перенаправляем пользователя на страницу index.html
-            window.location.href = "index.html";
+            form.forEach(forms => {
+              forms.reset();
+            });
+            // window.location.href = "index.html";
           }, 2000);
         } else {
           // Если произошла ошибка при отправке, показываем сообщение с ошибкой
@@ -63,11 +66,4 @@ $(".base-triger").on("click", function(e) {
     xhr.send("name=" + encodeURIComponent(form.name.value) + "&phone=" + encodeURIComponent(form.phone.value));
     });
     });
-
-
-// let images = document.querySelectorAll('img');
-
-// images.forEach((img) => {
-//   img.setAttribute('loading', 'lazy');
-// });
 

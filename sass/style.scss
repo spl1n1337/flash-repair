@@ -1492,3 +1492,16 @@ img.border-black {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.title-small._center {
+    display: block;
+    text-align: center;
+}
+
+.order-list {
+    list-style: auto !important;
+    padding-left: 20px;
+    li {
+        list-style: auto !important;
+    }
+}
