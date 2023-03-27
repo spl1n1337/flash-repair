@@ -48,7 +48,7 @@ form.forEach(element => {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: new URLSearchParams(new FormData(form)).toString(),
+        body: new URLSearchParams(new FormData(element)).toString(),
       });
 
       const data = await response.json();
@@ -59,7 +59,7 @@ form.forEach(element => {
         setTimeout(() => {
           thankyou.style.display = "none";
           overlay1.style.display = "none";
-          form.reset();
+          element.reset();
         }, 2000);
       } else {
         alert(data.message);
