@@ -26,44 +26,49 @@ $(".base-triger").on("click", function(e) {
   }
   });
 
-  let form = document.querySelectorAll("form");
-  let thankyou = document.getElementById("thankyou");
-  let overlay1 = document.querySelector('.overlay1');
-  
-  // Обрабатываем отправку формы
-  form.forEach(function(form) {
-    form.addEventListener("submit", function(event) {
+  const form = document.querySelectorAll("form");
+const thankyou = document.getElementById("thankyou");
+const overlay1 = document.querySelector(".overlay1");
+
+form.forEach(element => {
+  element.addEventListener("submit", async (event) => {
     event.preventDefault();
-    
-    // Отправляем данные формы на сервер
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "mail.php");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        // Если ответ получен, обрабатываем его
-        let response = JSON.parse(xhr.responseText);
-        if (response.status === "success") {
-          // Если отправка прошла успешно, показываем блок "thankyou"
-          thankyou.style.display = "block";
-          overlay1.style.display = "block";
-          // Скрываем блок через 2 секунды
-          setTimeout(function() {
-            thankyou.style.display = "none";
-            overlay1.style.display = "none";
-            // Перенаправляем пользователя на страницу index.html
-            form.forEach(forms => {
-              forms.reset();
-            });
-            // window.location.href = "index.html";
-          }, 2000);
-        } else {
-          // Если произошла ошибка при отправке, показываем сообщение с ошибкой
-          alert(response.message);
-        }
+
+    const phoneInput = element.querySelector("#number-1678823830535");
+    const phoneRegex = /^((\+7|7|8)+([0-9]){10})$/;
+
+    if (!phoneRegex.test(phoneInput.value)) {
+      alert("Пожалуйста, введите корректный телефонный номер РФ");
+      return;
+    }
+
+    try {
+      const response = await fetch("mail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      });
+
+      const data = await response.json();
+      if (data.status === "success") {
+        thankyou.style.display = "block";
+        overlay1.style.display = "block";
+
+        setTimeout(() => {
+          thankyou.style.display = "none";
+          overlay1.style.display = "none";
+          form.reset();
+        }, 2000);
+      } else {
+        alert(data.message);
       }
-    };
-    xhr.send("name=" + encodeURIComponent(form.name.value) + "&phone=" + encodeURIComponent(form.phone.value));
-    });
-    });
+    } catch (error) {
+      console.error(error);
+      alert("Ошибка при отправке формы");
+    }
+  });
+
+});
 
