@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,681 +12,808 @@
     <link rel="stylesheet" href="css/reboot.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+    
 
+    <header class="header">
+        <div class="top-banner">
+            <a href="index.html" class="logo">
+                <img title="title" src="img/icons/wd-logo.png" alt="logo" title="logo" class="logo-img">
+                <div>Western <span>Digital</span></div>
+            </a>
+            <div class="top-info">
+                <a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a>
+                <a href="#" class="top-info__addres">Лубянский проезд 15/2, офис 213</a>
+            </div>
+            <div class="menu-trigger">
+                <a class="menu-button left-cross"><span></span></a>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="dostavka.html">Заказать доставку</a></li>
+                    <li><a href="tech.html">Оборудование</a></li>
+                    <li><a href="clients.html">Наши клиенты</a></li>
+                    <li><a href="price.html">Цены</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#" class="prevent" onclick="return false">Восстановление данных</a>
+                        <ul class="dropdown-list">
+                            <li><a href="hdd.html">Жесткие диски</a></li>
+                            <li><a href="raid.html">RAID массивы</a></li>
+                            <li><a href="ssd.html">SSD носители</a></li>
+                            <li><a href="flash.html">USB флешки</a></li>
+                            <li><a href="card.html">Карты памяти</a></li>
+                            <li><a href="vosstanovlenie_vneshnego_zhestkogo_diska.html">Внешние диски</a></li>
+                            <li><a href="vosstanovlenie_dannyh_mac.html">Apple iMac / MacBook</a></li>
+                            <li><a href="raid.html">Сетевые диски NAS</a></li>
+                            <li><a href="virtual_machine.html">Виртуальные машины</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="prevent">Информация</a>
+                        <ul class="dropdown-list _last">
+                            <li><a href="programs.html">Программы и утилиты</a></li>
+                            <li><a href="privacy.html">Конфиденциальность</a></li>
+                            <li><a href="firm.html">Юридическим лицам</a></li>
+                            <li><a href="team.html">Команда экспертов</a></li>
+                            <li><a href="regions-rf.html">Работа с регионами</a></li>
+                            <li><a href="questions.html">Вопросы и ответы</a></li>
+                            <li><a href="review.html">Отзывы клиентов</a></li>
 
-        <header class="header">
-            <div class="top-banner">
-                <a href="index.html" class="logo">
-                    <img title="title" src="img/icons/wd-logo.png" alt="logo" title="logo" class="logo-img">
-                    <div>Western <span>Digital</span></div>
-                </a>
-                <div class="top-info">
-                    <a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a>
-                    <a href="#" class="top-info__addres">Лубянский проезд 15/2, офис 213</a>
+                            <li><a href="article.html">Статьи и обзоры</a></li>
+                            <li><a href="rekvizit.html">Наши реквизиты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN TAG START -->
+    <main class="main tech">
+        <!-- ASIDE LEFT START -->
+        <aside class="aside-left">
+            <div class="aside-brands">
+                <h2 class="aside-title">Производители</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
+                </div>
+                <div class="aside-brands-wrapper">
+                    <a class="aside-brands-item" href="wd.html"><img title="title" src="img/brands/wd2.png" alt=""
+                            title=""></a>
+                    <a class="aside-brands-item" href="seagate.html"><img title="title" src="img/brands/seagate2.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="hitachi.html"><img title="title" src="img/brands/hitachi2.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="samsung.html"><img title="title" src="img/brands/samsung2.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="maxtor.html"><img title="title" src="img/brands/maxtor-aside.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="fujitsu.html"><img title="title" src="img/brands/fujitsu2.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="toshiba.html"><img title="title" src="img/brands/toshiba.png"
+                            alt="" title=""></a>
+                    <a class="aside-brands-item" href="ibm.html"><img title="title" src="img/brands/ibm.png" alt=""
+                            title=""></a>
                 </div>
             </div>
-            <nav class="top-nav">
-                <div class="container">
-                    <ul>
-                        <li><a href="dostavka.html">Заказать доставку</a></li>
-                        <li><a href="tech.html">Оборудование</a></li>
-                        <li><a href="clients.html">Наши клиенты</a></li>
-                        <li><a href="price.html">Цены</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                        <li><a href="#">Восстановление данных</a>
-                            <ul>
-                                <li><a href="hdd.html">Жесткие диски</a></li>
-                                <li><a href="raid.html">RAID массивы</a></li>
-                                <li><a href="ssd.html">SSD носители</a></li>
-                                <li><a href="flash.html">USB флешки</a></li>
-                                <li><a href="card.html">Карты памяти</a></li>
-                                <li><a href="vosstanovlenie_vneshnego_zhestkogo_diska.html">Внешние диски</a></li>
-                                <li><a href="vosstanovlenie_dannyh_mac.html">Apple iMac / MacBook</a></li>
-                                <li><a href="raid.html">Сетевые диски NAS</a></li>
-                                <li><a href="virtual_machine.html">Виртуальные машины</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="prevent">Информация</a>
-                            <ul>
-                                <li><a href="programs.html">Программы и утилиты</a></li>
-                                <li><a href="privacy.html">Конфиденциальность</a></li>
-                                <li><a href="firm.html">Юридическим лицам</a></li>
-                                <li><a href="team.html">Команда экспертов</a></li>
-                                <li><a href="regions-rf.html">Работа с регионами</a></li>
-                                <li><a href="questions.html">Вопросы и ответы</a></li>
-                                <li><a href="review.html">Отзывы клиентов</a></li>
-                                
-                                <li><a href="article.html">Статьи и обзоры</a></li>
-                                <li><a href="rekvizit.html">Наши реквизиты</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-<!-- MAIN TAG START -->
-        <main class="main tech">
-<!-- ASIDE LEFT START -->
-            <aside class="aside-left">
-                <div class="aside-brands">
-                    <h2 class="aside-title">Производители</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <div class="aside-brands-wrapper">
-                        <a class="aside-brands-item" href="wd.html"><img title="title" src="img/brands/wd2.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="seagate.html"><img title="title" src="img/brands/seagate2.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="hitachi.html"><img title="title" src="img/brands/hitachi2.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="samsung.html"><img title="title" src="img/brands/samsung2.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="maxtor.html"><img title="title" src="img/brands/maxtor-aside.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="fujitsu.html"><img title="title" src="img/brands/fujitsu2.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="toshiba.html"><img title="title" src="img/brands/toshiba.png" alt="" title=""></a>
-                        <a class="aside-brands-item" href="ibm.html"><img title="title" src="img/brands/ibm.png" alt="" title=""></a>
-                    </div>
-                </div>
-                <div class="aside-banner">
-                    <a href="partners.html">
-                        <img title="title" src="img/brands/partners.png" alt="">
+            <div class="aside-banner">
+                <a href="partners.html">
+                    <img title="title" src="img/brands/partners.png" alt="">
+                </a>
+            </div>
+            <div class="aside-item">
+                <div class="warranty-left-container">
+                    <a href="privacy.html" class="warranty-left-container__item">
+                        <div class="warranty-left-container__item-img">
+                            <img title="title" src="img/icons/lock.svg" alt="">
+                        </div>
+                        <p class="descr">Гарантия конфиденциальности информации</p>
                     </a>
                 </div>
-                <div class="aside-item">
-                    <div class="warranty-left-container">
-                        <a href="privacy.html" class="warranty-left-container__item">
-                            <div class="warranty-left-container__item-img">
-                                <img title="title" src="img/icons/lock.svg" alt="">
-                            </div>
-                            <p class="descr">Гарантия конфиденциальности информации</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="aside-item">
+                <div class="warranty-left-container">
+                    <a href="rekvizit.html" class="warranty-left-container__item">
+                        <div class="warranty-left-container__item-img">
+                            <img title="title" src="img/icons/doc.svg" alt="">
+                        </div>
+                        <p class="descr">Полный комплект документации для юридических лиц</p>
+                    </a>
                 </div>
-                <div class="aside-item">
-                    <div class="warranty-left-container">
-                        <a href="rekvizit.html" class="warranty-left-container__item">
-                            <div class="warranty-left-container__item-img">
-                                <img title="title" src="img/icons/doc.svg" alt="">
-                            </div>
-                            <p class="descr">Полный комплект документации для юридических лиц</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="aside-item aside-social">
+                <div class="descr">Мы в социальных сетях:</div>
+                <div class="aside-social-container">
+                    <a href="https://vk.com/" class="social-item"><img title="title" src="img/brands/vk.svg" alt=""></a>
+                    <a href="https://www.facebook.com/" class="social-item"><img title="title" src="img/brands/fb.svg"
+                            alt=""></a>
+                    <a href="https://habr.com/ru/all/" class="social-item"><img title="title" src="img/brands/habr.svg"
+                            alt=""></a>
+                    <a href="https://twitter.com/" class="social-item"><img title="title" src="img/brands/twitter.svg"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/" class="social-item"><img title="title"
+                            src="img/brands/inst.svg" alt=""></a>
+                    <a href="https://www.youtube.com/" class="social-item"><img title="title"
+                            src="img/brands/youtube.svg" alt=""></a>
                 </div>
-                <div class="aside-item aside-social">
-                    <div class="descr">Мы в социальных сетях:</div>
-                    <div class="aside-social-container">
-                        <a href="https://vk.com/" class="social-item"><img title="title" src="img/brands/vk.svg" alt=""></a>
-                        <a href="https://www.facebook.com/" class="social-item"><img title="title" src="img/brands/fb.svg" alt=""></a>
-                        <a href="https://habr.com/ru/all/" class="social-item"><img title="title" src="img/brands/habr.svg" alt=""></a>
-                        <a href="https://twitter.com/" class="social-item"><img title="title" src="img/brands/twitter.svg" alt=""></a>
-                        <a href="https://www.instagram.com/" class="social-item"><img title="title" src="img/brands/inst.svg" alt=""></a>
-                        <a href="https://www.youtube.com/" class="social-item"><img title="title" src="img/brands/youtube.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="aside-item">
-                    <div class="descr">Принимаем к оплате<br>банковские карты</div>
-                    <div class="payment"><img title="title" src="img/icons/visa-mastercard2.png" alt=""></div>
-                </div>
-                <div class="aside-item">
-                    <div class="descr">Сертификация<br>ГОСТ Р ИСО 9001-2015<br>(ISO 9001:2015)</div>
-                    <a href=""><div class="payment"><img title="title" src="img/icons/ISO_9001.png" alt=""></div></a>
-                </div>
-<!-------------------------------- ASIDE LEFT END -------------------------------->
-            </aside>
+            </div>
+            <div class="aside-item">
+                <div class="descr">Принимаем к оплате<br>банковские карты</div>
+                <div class="payment"><img title="title" src="img/icons/visa-mastercard2.png" alt=""></div>
+            </div>
+            <div class="aside-item">
+                <div class="descr">Сертификация<br>ГОСТ Р ИСО 9001-2015<br>(ISO 9001:2015)</div>
+                <a href="">
+                    <div class="payment"><img title="title" src="img/icons/ISO_9001.png" alt=""></div>
+                </a>
+            </div>
+            <!-------------------------------- ASIDE LEFT END -------------------------------->
+        </aside>
 
-<!-- MAIN CONTENT START -->
-            <div class="main-content">
+        <!-- MAIN CONTENT START -->
+        <div class="main-content">
 
-                <div class="hero">
-                    <h1 class="main-title">Оборудование для восстановление данных</h1>
+            <div class="hero">
+                <h1 class="main-title">Оборудование для восстановление данных</h1>
+            </div>
+
+            <div class="post-container">
+                <h2 class="title-small">Восстановление данных в самой мощной лаборатории Москвы</h2>
+                <p class="descr">
+                    Оснащенной современным оборудованием и передовыми технологиями восстановления данных. Полностью
+                    укомплектованные рабочие станции, собранные на базе процессоров Intel Core i7 с
+                    программно-аппаратными комплексами PC-3000 UDMA и PC-3000 Express, позволяют нам брать в работу
+                    любой объем заказов, не создавая записи и очередей. Все донорские диски в наличии, самая большая
+                    база донорских дисков в Москве позволяет нам сразу приступать к выполнению заказа, не тратя время на
+                    поиски подходящих запчастей.
+            </div>
+
+            <div class="post-container">
+                <h2 class="title-small">Лучшее оборудование - больше возможностей!</h2>
+                <p class="descr">
+                    Storelab - единственная лаборатория в Москве, в которой есть полный комплекс оборудования для работы
+                    с серверными массивами на жестких дисках SCSI, SAS, Fibre Channel, включая последнюю версию
+                    комплекса PC-3000 SAS с DATA Extractor и RAID Edition. Так же у нас имеется ряд собственных
+                    уникальных программных разработок и методик восстановления информации, не имеющих аналогов у
+                    конкурентов. Это позволяет нам в самых сложных случаях достигать положительных результатов и успешно
+                    восстанавливать данных, даже в тех случаях, что другие компании считают невозможным.
+            </div>
+
+             <div class="post-container clean-room">
+                <h2 class="title-small">Уникальная чистая комната в Москве</h2>
+                <p class="descr">
+                    Чистая зона. Мы построили уникальную чистую комнату. В которой чисто не только в ламинарном боксе.
+                    Мы несколько лет изучали опыт крупнейших мировых компаний по использованию “Чистых помещений” в
+                    области производства микроэлектроники. Были изучены гигабайты информации в открытом доступе об опыте
+                    таких корпораций как Intel, AMD, Samsung. Также проведены консультации с крупнейшими Российскими
+                    производителями чистых комнат и зон, это компании ЗАО “Ламинарные системы” г. Миасс, и другими. В
+                    чистой зоне установлен ламинарный бокс производства компании Lamsys предназначенный для работы с
+                    микроэлектроникой. По нашему заказу в конструкцию ламинарного бокса внесены некоторые изменения для
+                    удобства работы.
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech1.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech2.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech3.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech4.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container">
-                    <h2 class="title-small">Восстановление данных в самой мощной лаборатории Москвы</h2>
-                    <p class="descr">
-                        Оснащенной современным оборудованием и передовыми технологиями восстановления данных. Полностью укомплектованные рабочие станции, собранные на базе процессоров Intel Core i7 с программно-аппаратными комплексами PC-3000 UDMA и PC-3000 Express, позволяют нам брать в работу любой объем заказов, не создавая записи и очередей. Все донорские диски в наличии, самая большая база донорских дисков в Москве позволяет нам сразу приступать к выполнению заказа, не тратя время на поиски подходящих запчастей.
+            <div class="post-container clean-room">
+                <h2 class="title-small">Съемники магнитных головок и пластин жесткого диска.</h2>
+                <p class="descr">
+                    В настоящее время мы используем съемники, сделанные специально для нашей лаборатории на высокоточном
+                    производстве под заказ. Также используем съемники мирового производителя HDD Syrgery Tool. Они
+                    отличаются высоким качеством исполнения, удобством в работе. Средняя цена съемника для одной модели
+                    жесткого диска составляет около 500 евро с растаможкой. Для некоторых моделей жестких дисков
+                    используются съемники Российского производства. Китайские съемники использовать крайне не
+                    рекомендуем из-за низкого качества геометрии и высокой вероятности повредить магнитные пластины во
+                    время использования. Съемники магнитных пластин используем для снятия "блинов" жесткого диска в
+                    случаях, когда поврежден шпиндель жесткого диска.
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech5.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech6.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech7.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech8.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container">
-                    <h2 class="title-small">Лучшее оборудование - больше возможностей!</h2>
-                    <p class="descr">
-                        Storelab - единственная лаборатория в Москве, в которой есть полный комплекс оборудования для работы с серверными массивами на жестких дисках SCSI, SAS, Fibre Channel, включая последнюю версию комплекса PC-3000 SAS с DATA Extractor и RAID Edition. Так же у нас имеется ряд собственных уникальных программных разработок и методик восстановления информации, не имеющих аналогов у конкурентов. Это позволяет нам в самых сложных случаях достигать положительных результатов и успешно восстанавливать данных, даже в тех случаях, что другие компании считают невозможным.
+            <div class="post-container clean-room">
+                <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Express и Portable</h2>
+                <p class="descr">
+                    Новый производительный контроллер PC-3000 Express, это плата, устанавливаемая в PCI-Express слот
+                    расширения управляющего компьютера. Шесть диагностических портов контроллера распределились
+                    следующим образом: 4 порта SATA с максимальной скоростью передачи данных 133 Мб/сек и 2 порта PATA
+                    со скоростью 100 Мб/сек. Два порта SATA (SATA0 и SATA1) являются основными, два других порта SATA
+                    (SATA2 и SATA3) являются переключаемыми с портами PATA (PATA0 и PATA1).
+                    <br><br>
+                    Программно-аппаратный комплекс PC-3000 Portable III позволяет восстановить данные с логически или
+                    физически поврежденных накопителей на жестких магнитных дисках SATA / PATA* / USB, твердотельных
+                    накопителей SATA / M. 2 PCIe NVMe, AHCI и RAID
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech9.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech10.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech11.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech12.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Уникальная чистая комната в Москве</h2>
-                    <p class="descr">
-                        Чистая зона. Мы построили уникальную чистую комнату. В которой чисто не только в ламинарном боксе. Мы несколько лет изучали опыт крупнейших мировых компаний по использованию “Чистых помещений” в области производства микроэлектроники. Были изучены гигабайты информации в открытом доступе об опыте таких корпораций как Intel, AMD, Samsung. Также проведены консультации с крупнейшими Российскими производителями чистых комнат и зон, это компании ЗАО “Ламинарные системы” г. Миасс, и другими. В чистой зоне установлен ламинарный бокс производства компании Lamsys предназначенный для работы с микроэлектроникой. По нашему заказу в конструкцию ламинарного бокса внесены некоторые изменения для удобства работы.
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech1.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech2.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech3.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech4.png" alt=""></div>
-                    </div>
+            <div class="post-container clean-room">
+                <h2 class="title-small">Паяльные станции и оборудования для пайки</h2>
+                <p class="descr">
+                    Паяльное оборудование: инфракрасная паяльная станция AHCI IR6500 имеет инфракрасный нижний и верхний
+                    подогревы, достаточно широкий функционал по программированию режимов охлаждения. Станция
+                    используется для пайки чипов BGA (англ. Ball grid array — массив шариков). Работа на данной станции
+                    позволяет очень точно соблюдать правильный технологический режим пайки без перегрева элементов, в
+                    отличии от ручных паяльных фенов, где точно контролировать температуру и область нагрева просто
+                    невозможно. Столы с антистатическим покрытием.
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech13.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech14.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech15.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech16.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Съемники магнитных головок и пластин жесткого диска.</h2>
-                    <p class="descr">
-                        В настоящее время мы используем съемники, сделанные специально для нашей лаборатории на высокоточном производстве под заказ. Также используем съемники мирового производителя HDD Syrgery Tool. Они отличаются высоким качеством исполнения, удобством в работе. Средняя цена съемника для одной модели жесткого диска составляет около 500 евро с растаможкой. Для некоторых моделей жестких дисков используются съемники Российского производства. Китайские съемники использовать крайне не рекомендуем из-за низкого качества геометрии и высокой вероятности повредить магнитные пластины во время использования. Съемники магнитных пластин используем для снятия "блинов" жесткого диска в случаях, когда поврежден шпиндель жесткого диска.
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech5.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech6.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech7.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech8.png" alt=""></div>
-                    </div>
+            <div class="post-container clean-room">
+                <h2 class="title-small">Рабочее место для восстановление Flash и SSD дисков</h2>
+                <p class="descr">
+                    Программно-аппаратный комплекс PC-3000 Flash предназначен для восстановление флешек, SSD и карт
+                    памяти. Адаптер «Spider Board» предназначен для выполнения коммутации с технологическими выводами
+                    накопителей в монолитном исполнении на базе NAND флеш памяти. Адаптер представляет собой 25
+                    специализированных игольчатых контактов, связь которых с сигналами NAND интерфейса задается
+                    програмным обеспечением.
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech17.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech18.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech19.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech20.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Express и Portable</h2>
-                    <p class="descr">
-                        Новый производительный контроллер PC-3000 Express, это плата, устанавливаемая в PCI-Express слот расширения управляющего компьютера. Шесть диагностических портов контроллера распределились следующим образом: 4 порта SATA с максимальной скоростью передачи данных 133 Мб/сек и 2 порта PATA со скоростью 100 Мб/сек. Два порта SATA (SATA0 и SATA1) являются основными, два других порта SATA (SATA2 и SATA3) являются переключаемыми с портами PATA (PATA0 и PATA1).
-                        <br><br>
-                        Программно-аппаратный комплекс PC-3000 Portable III позволяет восстановить данные с логически или физически поврежденных накопителей на жестких магнитных дисках SATA / PATA* / USB, твердотельных накопителей SATA / M. 2 PCIe NVMe, AHCI и RAID
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech9.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech10.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech11.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech12.png" alt=""></div>
-                    </div>
+            <div class="post-container clean-room">
+                <h2 class="title-small">Восстановление RAID массивов любой сложности</h2>
+                <p class="descr">
+                    Мы успешно восстанавливаем данные в случаях выхода из строя винчестеров, контроллера или полного
+                    разрушения массива. При выходе из строя жестких дисков, мы сначала ремонтируем неисправные
+                    накопители до рабочего состояния, затем снимаем с них посекторные образы, и проводим сборку RAID.
+                </p>
+                <div class="grid">
+                    <div class="grid-item"><img title="title" src="img/image/tech21.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech22.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech23.png" alt=""></div>
+                    <div class="grid-item"><img title="title" src="img/image/tech24.png" alt=""></div>
                 </div>
+            </div>
 
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Паяльные станции и оборудования для пайки</h2>
-                    <p class="descr">
-                        Паяльное оборудование: инфракрасная паяльная станция AHCI IR6500 имеет инфракрасный нижний и верхний подогревы, достаточно широкий функционал по программированию режимов охлаждения. Станция используется для пайки чипов BGA (англ. Ball grid array — массив шариков). Работа на данной станции позволяет очень точно соблюдать правильный технологический режим пайки без перегрева элементов, в отличии от ручных паяльных фенов, где точно контролировать температуру и область нагрева просто невозможно. Столы с антистатическим покрытием.
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech13.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech14.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech15.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech16.png" alt=""></div>
-                    </div>
+            <div class="post-container one-pic">
+                <h2 class="title-small">Состав комплексов PC-3000 Express</h2>
+                <p class="descr">
+                    В состав комплекса PC-3000 входят 16 специализированных утилит для различных производителей,
+                    архитектур и семейств HDD. С их помощью, можно произвести углубленную диагностику различных
+                    подсистем накопителя, выявить повреждения и попытаться устранить их программными методами, получив в
+                    результате доступ к данным пользователя. В случае ремонта HDD, когда пользовательские данные не
+                    нужны, можно выполнить полную инициализацию накопителя, отключить неисправные магнитные головки,
+                    скрыть найденные дефекты магнитных поверхностей и переконфигурировать HDD.
+                </p>
+                <img title="title" src="img/image/tech25.png" alt="">
+            </div>
+
+            <div class="post-container one-pic">
+                <h2 class="title-small">Программно-аппаратные комплексы PC-3000 SAS</h2>
+                <p class="descr">
+                    Программно-аппаратный комплекс PC-3000 SAS предназначен для тестирования и ремонта (восстановления
+                    работоспособности) HDD с интерфейсом SAS (Serial Attached SCSI) и SCSI. Совместно с Data
+                    Extractor-ом комплекс осуществляет восстановление данных пользователя с поврежденных SAS/SCSI
+                    накопителей.
+                </p>
+                <img title="title" src="img/image/tech26.png" alt="">
+            </div>
+
+           <div class="post-container one-pic">
+                <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Portable</h2>
+                <p class="descr">
+                    Мобильный программно-аппаратный комплекс PC-3000 Portable предназначен для диагностики и
+                    восстановление данных с жестких дисков с интерфейсом SATA (Serial ATA) и PATA (IDE), емкостью: от
+                    500 Мб до 6 Тб, производства: Seagate, Western Digital, Fujitsu, Samsung, Maxtor, Quantum, IBM,
+                    Hitachi, Toshiba c форм-факторами 3.5", 2.5", 1.8".
+                </p>
+                <img title="title" src="img/image/tech27.png" alt="">
+            </div>
+
+             <div class="post-container one-pic">
+                <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Flash SSD Edition</h2>
+                <p class="descr">
+                    PC-3000 Flash SSD Edition - программно-аппаратный комплекс, предназначенный для восстановления
+                    информации со всех типов накопителей на основе NAND флеш памяти (USB Flash, SD, MS, xD, MMC, CF,
+                    диктофоны, iPhone, и SSD - Solid State Drive), в ситуации, когда доступ к данным посредством
+                    штатного интерфейса накопителя невозможен.
+                    <br><br>
+                    К данной категории относятся как физически поврежденные накопители, так и все случаи логических
+                    разрушений как в структуре файловой системы данных пользователя, так и в служебных данных
+                    накопителя. Комплекс, выполняя роль программного транслятора при доступе к данным, позволяет
+                    воспроизвести алгоритм работы штатного контроллера накопителя и восстанавливает первоначальное
+                    представление данных так, как их записал пользователь.
+                </p>
+                <img title="title" src="img/image/tech28.png" alt="">
+            </div>
+
+           <div class="post-container one-pic">
+                <h2 class="title-small">Состав комплексов PC-3000 Flash SSD Edition</h2>
+                <ul class="descr">
+                    <li>Устройство считывания микросхем NAND флэш-памяти (PC Flash Reader)</li>
+                    <li>Программное обеспечение комплекса</li>
+                    <li>Набор переходников</li>
+                    <li>Кабель USB</li>
+                    <li>LGA/TLGA-52 14x18mm</li>
+                    <li>Техническое описание и методы восстановления информации</li>
+                </ul>
+                <img title="title" src="img/image/tech28.png" alt="">
+            </div>
+
+            <div class="divider"></div>
+            <div class="post-container benefits connectors">
+                <div class="grid-item">
+                    <div><img title="title" src="img/image/TSOP-48s.png" alt="image 1"></div>
+                    <div class="text-link">TSOP-48<span>&nbsp;&nbsp;→</span></div>
                 </div>
-
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Рабочее место для восстановление Flash и SSD дисков</h2>
-                    <p class="descr">
-                        Программно-аппаратный комплекс PC-3000 Flash предназначен для восстановление флешек, SSD и карт памяти. Адаптер «Spider Board» предназначен для выполнения коммутации с технологическими выводами накопителей в монолитном исполнении на базе NAND флеш памяти. Адаптер представляет собой 25 специализированных игольчатых контактов, связь которых с сигналами NAND интерфейса задается програмным обеспечением.
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech17.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech18.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech19.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech20.png" alt=""></div>
-                    </div>
+                <div class="grid-item">
+                    <div><img title="title" src="img/image/TSOP-56s.png" alt="image 2"></div>
+                    <div class="text-link">TSOP-56<span>&nbsp;&nbsp;→</span></div>
                 </div>
-
-                <div class="post-container clean-room">
-                    <h2 class="title-small">Восстановление RAID массивов любой сложности</h2>
-                    <p class="descr">
-                        Мы успешно восстанавливаем данные в случаях выхода из строя винчестеров, контроллера или полного разрушения массива. При выходе из строя жестких дисков, мы сначала ремонтируем неисправные накопители до рабочего состояния, затем снимаем с них посекторные образы, и проводим сборку RAID.
-                    </p>
-                    <div class="grid">
-                        <div class="grid-item"><img title="title" src="img/image/tech21.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech22.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech23.png" alt=""></div>
-                        <div class="grid-item"><img title="title" src="img/image/tech24.png" alt=""></div>
-                    </div>
+                <div class="grid-item">
+                    <div><img title="title" src="img/image/LGA-TLGA52s.png" alt="image 3"></div>
+                    <div class="text-link">LGA-TLGA52<span>&nbsp;&nbsp;→</span></div>
                 </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Состав комплексов PC-3000 Express</h2>
-                    <p class="descr">
-                        В состав комплекса PC-3000 входят 16 специализированных утилит для различных производителей, архитектур и семейств HDD. С их помощью, можно произвести углубленную диагностику различных подсистем накопителя, выявить повреждения и попытаться устранить их программными методами, получив в результате доступ к данным пользователя. В случае ремонта HDD, когда пользовательские данные не нужны, можно выполнить полную инициализацию накопителя, отключить неисправные магнитные головки, скрыть найденные дефекты магнитных поверхностей и переконфигурировать HDD.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech25.png" alt=""></div>
+                <div class="grid-item">
+                    <div><img title="title" src="img/image/BGA-152s.png" alt="image 4"></div>
+                    <div class="text-link">BGA-152<span>&nbsp;&nbsp;→</span></div>
                 </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Программно-аппаратные комплексы PC-3000 SAS</h2>
-                    <p class="descr">
-                        Программно-аппаратный комплекс PC-3000 SAS предназначен для тестирования и ремонта (восстановления работоспособности) HDD с интерфейсом SAS (Serial Attached SCSI) и SCSI. Совместно с Data Extractor-ом комплекс осуществляет восстановление данных пользователя с поврежденных SAS/SCSI накопителей.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech26.png" alt=""></div>
+                <div class="grid-item">
+                    <div><img title="title" src="img/image/VBGA-100s.png" alt="image 4"></div>
+                    <div class="text-link">VBGA-100<span>&nbsp;&nbsp;→</span></div>
                 </div>
+            </div>
+            <div class="divider"></div>
 
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Portable</h2>
-                    <p class="descr">
-                        Мобильный программно-аппаратный комплекс PC-3000 Portable предназначен для диагностики и восстановление данных с жестких дисков с интерфейсом SATA (Serial ATA) и PATA (IDE), емкостью: от 500 Мб до 6 Тб, производства: Seagate, Western Digital, Fujitsu, Samsung, Maxtor, Quantum, IBM, Hitachi, Toshiba c форм-факторами 3.5", 2.5", 1.8".
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech27.png" alt=""></div>
-                </div>
+            <div class="post-container one-pic">
+                <h2 class="title-small">Комплект съемников к жестким дискам любых моделей</h2>
+                <p class="descr">
+                    Устройство для перестановки магнитных пластин в жестком диске с заклинившем двигателе. Применяется
+                    при невозможности расклинить шпиндель двигателя, где требуется перестановка всех пластин. Жестко
+                    фиксирует блок пластин относительно друг друга, не допуская даже малейшего смещения при переносе.
+                </p>
+                <img title="title" src="img/image/tech30.png" alt="">
+            </div>
 
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Программно-аппаратные комплексы PC-3000 Flash SSD Edition</h2>
-                    <p class="descr">
-                        PC-3000 Flash SSD Edition - программно-аппаратный комплекс, предназначенный для восстановления информации со всех типов накопителей на основе NAND флеш памяти (USB Flash, SD, MS, xD, MMC, CF, диктофоны, iPhone, и SSD - Solid State Drive), в ситуации, когда доступ к данным посредством штатного интерфейса накопителя невозможен.
-                        <br><br>
-                        К данной категории относятся как физически поврежденные накопители, так и все случаи логических разрушений как в структуре файловой системы данных пользователя, так и в служебных данных накопителя. Комплекс, выполняя роль программного транслятора при доступе к данным, позволяет воспроизвести алгоритм работы штатного контроллера накопителя и восстанавливает первоначальное представление данных так, как их записал пользователь.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech28.png" alt=""></div>
-                </div>
+             <div class="post-container one-pic">
+                <h2 class="title-small">Замена блока магнитных головок в чистой комнате</h2>
+                <p class="descr">
+                    В случаях, когда считывающий элемент вышел из строя требуется замена блока с донорского диска.
+                </p>
+                <img title="title" src="img/image/tech31.png" alt="">
+            </div>
 
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Состав комплексов PC-3000 Flash SSD Edition</h2>
-                    <ul class="descr">
-                        <li>Устройство считывания микросхем NAND флэш-памяти (PC Flash Reader)</li>
-                        <li>Программное обеспечение комплекса</li>
-                        <li>Набор переходников</li>
-                        <li>Кабель USB</li>
-                        <li>LGA/TLGA-52 14x18mm</li>
-                        <li>Техническое описание и методы восстановления информации</li>
-                    </ul>
-                        <div class="grid-item"><img title="title" src="img/image/tech28.png" alt=""></div>
-                </div>
+            <div class="post-container one-pic">
+                <h2 class="title-small">Профессиональное восстановление данных в чистой комнате</h2>
+                <p class="descr">
+                    Использование чистой комнаты при работе с механикой жесткий дисков позволяет избежать попадания пыли
+                    и частиц в гермоблок жесткого диска.
+                </p>
+                <img title="title" src="img/image/tech32.png" alt="">
+            </div>
 
-                    <div class="divider"></div>
-                <div class="post-container benefits connectors">
+            <div class="post-container one-pic">
+                <h2 class="title-small">Большая база донорских дисков</h2>
+                <p class="descr">
+                    Большое количество донорских жестких дисков позволяет нам, не тратить время на поиски запчастей, а
+                    сразу приступать к выполнению заказа. У нас в наличии все модели донорских дисков, продающихся на
+                    территории России и СНГ.
+                </p>
+                <img title="title" src="img/image/tech33.png" alt="">
+            </div>
+
+            <div class="post-container one-pic">
+                <h2 class="title-small">Сразу приступаем к работе</h2>
+                <p class="descr">
+                    Большое количество оборудования позволяет нам работать без очередей, мы сразу отправляем заказ в
+                    работу после оформления и выполняем восстановление данных в самые кратчаишие сроки, насколько это
+                    возможно.
+                </p>
+                <img title="title" src="img/image/tech34.png" alt="">
+            </div>
+
+            <div class="post-container one-pic">
+                <h2 class="title-small">Участник и докладчик важнейших отраслевых конференций AceLab и Softcenter.</h2>
+                <p class="descr">
+                    Постоянный обмен опытом с коллегами и участие в отраслевых конференциях позволяет обладать самой
+                    последней информацией и быть в курсе последних разработок в Data Recovery.
+                </p>
+                <img title="title" src="img/image/tech35.png" alt="">
+            </div>
+
+            <div class="post-container tenth-block">
+                <h2 class="title-small">
+                    Лучшие специалисты по восстановлению данных в Москве
+                </h2>
+                <div class="grid">
+
                     <div class="grid-item">
-                        <div><img title="title" src="img/image/TSOP-48s.png" alt="image 1"></div>
-                        <div class="text-link">TSOP-48<span>&nbsp;&nbsp;→</span></div>
-                    </div>
-                    <div class="grid-item">
-                      <div><img title="title" src="img/image/TSOP-56s.png" alt="image 2"></div>
-                        <div class="text-link">TSOP-56<span>&nbsp;&nbsp;→</span></div>
-                    </div>
-                    <div class="grid-item">
-                      <div><img title="title" src="img/image/LGA-TLGA52s.png" alt="image 3"></div>
-                        <div class="text-link">LGA-TLGA52<span>&nbsp;&nbsp;→</span></div>
-                    </div>
-                    <div class="grid-item">
-                      <div><img title="title" src="img/image/BGA-152s.png" alt="image 4"></div>
-                        <div class="text-link">BGA-152<span>&nbsp;&nbsp;→</span></div>
-                    </div>
-                    <div class="grid-item">
-                        <div><img title="title" src="img/image/VBGA-100s.png" alt="image 4"></div>
-                          <div class="text-link">VBGA-100<span>&nbsp;&nbsp;→</span></div>
-                      </div>
-                </div>
-                    <div class="divider"></div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Комплект съемников к жестким дискам любых моделей</h2>
-                    <p class="descr">
-                        Устройство для перестановки магнитных пластин в жестком диске с заклинившем двигателе. Применяется при невозможности расклинить шпиндель двигателя, где требуется перестановка всех пластин. Жестко фиксирует блок пластин относительно друг друга, не допуская даже малейшего смещения при переносе.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech30.png" alt=""></div>
-                </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Замена блока магнитных головок в чистой комнате</h2>
-                    <p class="descr">
-                        В случаях, когда считывающий элемент вышел из строя требуется замена блока с донорского диска.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech31.png" alt=""></div>
-                </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Профессиональное восстановление данных в чистой комнате</h2>
-                    <p class="descr">
-                        Использование чистой комнаты при работе с механикой жесткий дисков позволяет избежать попадания пыли и частиц в гермоблок жесткого диска.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech32.png" alt=""></div>
-                </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Большая база донорских дисков</h2>
-                    <p class="descr">
-                        Большое количество донорских жестких дисков позволяет нам, не тратить время на поиски запчастей, а сразу приступать к выполнению заказа. У нас в наличии все модели донорских дисков, продающихся на территории России и СНГ.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech33.png" alt=""></div>
-                </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Сразу приступаем к работе</h2>
-                    <p class="descr">
-                        Большое количество оборудования позволяет нам работать без очередей, мы сразу отправляем заказ в работу после оформления и выполняем восстановление данных в самые кратчаишие сроки, насколько это возможно.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech34.png" alt=""></div>
-                </div>
-
-                <div class="post-container one-pic">
-                    <h2 class="title-small">Участник и докладчик важнейших отраслевых конференций AceLab и Softcenter.</h2>
-                    <p class="descr">
-                        Постоянный обмен опытом с коллегами и участие в отраслевых конференциях позволяет обладать самой последней информацией и быть в курсе последних разработок в Data Recovery.
-                    </p>
-                        <div class="grid-item"><img title="title" src="img/image/tech35.png" alt=""></div>
-                </div>
-
-                <div class="post-container tenth-block">
-                    <h2 class="title-small">
-                        Лучшие специалисты по восстановлению данных в Москве
-                    </h2>
-                    <div class="grid">
-                        
-                        <div class="grid-item">
-                          <img title="title" src="img/image/sec10.png" alt="image 1" />
-                          <p class="name">Александр Гуревич</p>
-                          <p class="exp">Инженер <br>
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
                             опыт работы 14 лет</p>
-                        </div>
-                      
-                        <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                      
-                          <div class="grid-item">
-                            <img title="title" src="img/image/sec10.png" alt="image 1" />
-                            <p class="name">Александр Гуревич</p>
-                            <p class="exp">Инженер <br>
-                              опыт работы 14 лет</p>
-                          </div>
-                                            
                     </div>
-                </div>
 
-                <div class="post-container seventeenth-block letters">
-                    <h2 class="title-small">Нам доверяют восстановление данных</h2>
-                    <div class="grid">
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-11.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-12.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec10.png" alt="image 1" />
+                        <p class="name">Александр Гуревич</p>
+                        <p class="exp">Инженер <br>
+                            опыт работы 14 лет</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container seventeenth-block letters">
+                <h2 class="title-small">Нам доверяют восстановление данных</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-11.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-12.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-31.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-32.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-31.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-32.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-41.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-42.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-41.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-42.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-51.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-52.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-51.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-52.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-61.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-62.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-61.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-62.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-71.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-72.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-71.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-72.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-81.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-82.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-81.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-82.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="" class="case-img"><img title="title" src="img/image/sec18-21.png" alt=""></a>
-                            <div class="case-content">
-                                <div class="case-title"><img title="title" src="img/image/sec18-22.png" alt=""></div>
-                                <div class="case-descr">
-                                    «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в строго оговоренные сроки с надлежащим качеством.
-                                </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="" class="case-img"><img title="title" src="img/image/sec18-21.png" alt=""></a>
+                        <div class="case-content">
+                            <div class="case-title"><img title="title" src="img/image/sec18-22.png" alt=""></div>
+                            <div class="case-descr">
+                                «Альфа-Банк» выражает признательность и благодарность сотрудникам лаборатории Сторлаб за
+                                отличные результаты, достигнутые в процессе сотрудничества. Все работы были выполнены в
+                                строго оговоренные сроки с надлежащим качеством.
                             </div>
-
-
                         </div>
-                        <div class="grid-item">
-                            <a href="review.html" class="text-link">Смотреть другие наши работы<span>&nbsp;&nbsp;→</span></a>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
 
-                <div class="post-container seventh-block">
-                    <h2 class="title-small">Закажите восстановление данных прямо сейчас</h2>
-                    
-                    <div class="grid">
-                        <div class="grid-item">
-                            <img title="title" src="img/image/sec7.png" alt="">
-                        </div>
-                        <div class="grid-item">
-                            <p class="descr">
-                                Закажите бесплатную доставку на диагностику по Москве и ближайшему Подмосковью. Позвоните по телефону: +7 (495) 215-00-24 или <a href="dostavka.html">оформите заявку на сайте </a>и наш штатный курьер доставит жесткий диск в лабораторию на диагностику. Поскольку у нас работают только штатные курьеры, мы бесплатно доставляем оборудование обратно, после восстановления данных. Бережное отношение к вашей технике. Перевозка осуществляется в специальной сумке, предназначенной для безопасной транспортировки жестких дисков.
-                            </p>
-                        </div>
+
+                    </div>
+                    <div class="grid-item">
+                        <a href="review.html" class="text-link">Смотреть другие наши
+                            работы<span>&nbsp;&nbsp;→</span></a>
                     </div>
                 </div>
 
-                <div class="post-container blog-links">
-                    <h2 class="title-xs">Статьи по теме восстановление данных</h2>
-                    <div class="blog-links-container">
-                        <ul>
-                            <li><a href="" class="aside-link">Внешний жесткий диск не виден в Windows, исключаем лишнее</a></li>
-                            <li><a href="" class="aside-link">Что делать если на экране вашего Mac появляется  знак вопроса?</a></li>
-                            <li><a href="" class="aside-link">Восстановление данных с перегревшихся жестких дисков</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="" class="aside-link">Что делать, если от жёсткого диска исходят щелчки?</a></li>
-                            <li><a href="" class="aside-link">Восстановления офисных документов (DOC, XLS, PPT)</a></li>
-                            <li><a href="" class="aside-link">Восстановление дисков Seagate Barracuda 7200.11, ES.2</a></li>
-                        </ul>
+
+            </div>
+
+            <div class="post-container seventh-block">
+                <h2 class="title-small">Закажите восстановление данных прямо сейчас</h2>
+
+                <div class="grid">
+                    <div class="grid-item">
+                        <img title="title" src="img/image/sec7.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <p class="descr">
+                            Закажите бесплатную доставку на диагностику по Москве и ближайшему Подмосковью. Позвоните по
+                            телефону: +7 (495) 215-00-24 или <a href="dostavka.html">оформите заявку на сайте </a>и наш
+                            штатный курьер доставит жесткий диск в лабораторию на диагностику. Поскольку у нас работают
+                            только штатные курьеры, мы бесплатно доставляем оборудование обратно, после восстановления
+                            данных. Бережное отношение к вашей технике. Перевозка осуществляется в специальной сумке,
+                            предназначенной для безопасной транспортировки жестких дисков.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container blog-links">
+                <h2 class="title-xs">Статьи по теме восстановление данных</h2>
+                <div class="blog-links-container">
+                    <ul>
+                        <li><a href="" class="aside-link">Внешний жесткий диск не виден в Windows, исключаем лишнее</a>
+                        </li>
+                        <li><a href="" class="aside-link">Что делать если на экране вашего Mac появляется знак
+                                вопроса?</a></li>
+                        <li><a href="" class="aside-link">Восстановление данных с перегревшихся жестких дисков</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="" class="aside-link">Что делать, если от жёсткого диска исходят щелчки?</a></li>
+                        <li><a href="" class="aside-link">Восстановления офисных документов (DOC, XLS, PPT)</a></li>
+                        <li><a href="" class="aside-link">Восстановление дисков Seagate Barracuda 7200.11, ES.2</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="post-container grid tech-benefits">
+                <div class="title-small">Почему для восстановления данных выбирают нас</div>
+                <div class="benefits-item">
+                    <div class="benefits-img">
+                        <img title="title" src="img/icons/tech-checkmark.svg" alt="">
+                    </div>
+                    <div class="descr">
+                        Storelab — это крупнейшая лаборатория в Москве. Вас обслуживают инженеры, которые знают и любят
+                        свою работу. Мы работаем без предоплат. В любое время с радостью ответим на все ваши вопросы.
+                        Звоните круглосуточно: <a href="tel:+74952150024">+7 (495) 215-00-24</a>.
+                    </div>
+                </div>
+                <div class="title-small">Как проводится диагностика</div>
+                <div class="benefits-item">
+                    <div class="benefits-img">
+                        <img title="title" src="img/icons/tech-timer.svg" alt="">
+                    </div>
+                    <div class="descr">
+                        Диагностика бесплатная, занимает примерно 10 - 15 минут. Далее специалист расскажет вам
+                        неисправность, <a href="">стоимость</a> и сроки работ по восстановлению данных. Если у вас нет
+                        возможности приехать к нам - <a href="dostavka.html">Закажите бесплатную доставку.</a>
+                    </div>
+                </div>
+                <div class="title-small">Как к нам проехать</div>
+                <div class="benefits-item">
+                    <div class="benefits-img">
+                        <img title="title" src="img/icons/tech-map.svg" alt="">
+                    </div>
+                    <div class="descr">
+                        Работаем ежедневно, находимся в минуте ходьбы от метро Китай-город
+                        по адресу Лубянский проезд 15/2, подъезд 4, офис 213 <a href="contacts.html">[ Схема проезда
+                            ]</a>
+                        Время работы: по будням с 9:00 до 21:00 в выходные с 9:00 до 19:00. Если вы на машине у нас есть
+                        <a href="contacts.html">бесплатная парковка.</a>
                     </div>
                 </div>
 
-                <div class="post-container grid tech-benefits">
-                    <div class="title-small">Почему для восстановления данных выбирают нас</div>
-                    <div class="benefits-item">
-                        <div class="benefits-img">
-                            <img title="title" src="img/icons/tech-checkmark.svg" alt="">
-                        </div>
-                        <div class="descr">
-                            Storelab — это крупнейшая лаборатория в Москве. Вас обслуживают инженеры, которые знают и любят свою работу. Мы работаем без предоплат. В любое время с радостью ответим на все ваши вопросы. Звоните круглосуточно: <a href="tel:+74952150024">+7 (495) 215-00-24</a>.
-                        </div>
-                    </div>
-                    <div class="title-small">Как проводится диагностика</div>
-                    <div class="benefits-item">
-                        <div class="benefits-img">
-                            <img title="title" src="img/icons/tech-timer.svg" alt="">
-                        </div>
-                        <div class="descr">
-                            Диагностика бесплатная, занимает примерно 10 - 15 минут. Далее специалист расскажет вам неисправность, <a href="">стоимость</a> и сроки работ по восстановлению данных. Если у вас нет возможности приехать к нам - <a href="dostavka.html">Закажите бесплатную доставку.</a>
-                        </div>
-                    </div>
-                    <div class="title-small">Как к нам проехать</div>
-                    <div class="benefits-item">
-                        <div class="benefits-img">
-                            <img title="title" src="img/icons/tech-map.svg" alt="">
-                        </div>
-                        <div class="descr">
-                            Работаем ежедневно, находимся в минуте ходьбы от метро Китай-город
-                            по адресу Лубянский проезд 15/2, подъезд 4, офис 213 <a href="contacts.html">[ Схема проезда ]</a>
-                            Время работы: по будням с 9:00 до 21:00 в выходные с 9:00 до 19:00.     Если вы на машине у нас есть <a href="contacts.html">бесплатная парковка.</a>
-                        </div>
-                    </div>
+            </div>
 
-                </div>
+        </div>
 
-                </div>
-                
-<!------------------------------------------------- MAIN CONTENT END --------------------------------------------------->
+        <!------------------------------------------------- MAIN CONTENT END --------------------------------------------------->
 
 
 
 
-<!--------------------------------------------------- ASIDE RIGHT START ------------------------------------------------>
-            <aside class="aside-right">
-                <div class="aside-item">
-                    <h2 class="aside-title">Наши&nbsp;преимущества</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <div class="aside-benefits">
-                        <a href="contancts.html" class="aside-link">Крупнейшая&nbsp;компания</a>
-                        <a href="contacts.html" class="aside-link">Рядом&nbsp;с&nbsp;метро</a>
-                        <a href="contacts.html" class="aside-link">Бесплатная&nbsp;парковка</a>
-                        <a href="dostavka.html" class="aside-link">Доставка&nbsp;бесплатно</a>
-                        <a href="tech.html" class="aside-link">Комплексы&nbsp;РС-300 Express</a>
-                        <a href="team.html" class="aside-link">Квалифицированные инжинеры</a>
-                        <a href="privacy.html" class="aside-link">Гарантия конфиденциальности</a>                    
-                    </div>
+        <!--------------------------------------------------- ASIDE RIGHT START ------------------------------------------------>
+        <aside class="aside-right">
+            <div class="aside-item">
+                <h2 class="aside-title">Наши&nbsp;преимущества</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
                 </div>
-                <div class="aside-item aside-review">
-                    <h2 class="aside-title">Отзывы клиентов</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>  
-                    <div class="aside-review-img">
-                        <img title="title" src="img/image/sec18-22.png" alt="" title="">
-                    </div>
-                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
-                    <div class="aside-review-img">
-                        <img title="title" src="img/image/sec18-22.png" alt="" title="">
-                    </div>
-                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
-                    <div class="aside-review-img">
-                        <img title="title" src="img/image/sec18-22.png" alt="" title="">
-                    </div>
-                    <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в работе и оперативность в исполнении заказываемых работ.»</div>
-                    <a href="review.html" class="aside-link">Все отзывы</a>                    
+                <div class="aside-benefits">
+                    <a href="contancts.html" class="aside-link">Крупнейшая&nbsp;компания</a>
+                    <a href="contacts.html" class="aside-link">Рядом&nbsp;с&nbsp;метро</a>
+                    <a href="contacts.html" class="aside-link">Бесплатная&nbsp;парковка</a>
+                    <a href="dostavka.html" class="aside-link">Доставка&nbsp;бесплатно</a>
+                    <a href="tech.html" class="aside-link">Комплексы&nbsp;РС-300 Express</a>
+                    <a href="team.html" class="aside-link">Квалифицированные инжинеры</a>
+                    <a href="privacy.html" class="aside-link">Гарантия конфиденциальности</a>
                 </div>
-                <div class="aside-item aside-news">
-                    <h2 class="aside-title">Новости</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <a href="dostavka.html" class="aside-link">Закажите бесплатную доставку и получите скидку 15%</a>            
-                    <span class="news-data">18 марта 2023</span>
-                    <a href="raid.html" class="aside-link">Восстановление данных RAID 1 массива на жестких дисках SAS</a>            
-                    <span class="news-data">16 марта 2023</span>
-                    <a href="news.html" class="aside-link">Интересные случаи из практики по восстановлению данных</a>            
-                    <span class="news-data">14 марта 2023</span>
+            </div>
+            <div class="aside-item aside-review">
+                <h2 class="aside-title">Отзывы клиентов</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
                 </div>
-                <div class="aside-item aside-news">
-                    <h2 class="aside-title">Статьи и услуги</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <a href="mac_data-recovery.html" class="aside-link">Нюансы восстановления данных с Apple</a>            
-                    <a href="linux_data-recovery.html" class="aside-link">Восстановление данных с Linux систем</a>            
-                           
-                    <a href="windows_data-recovery.html" class="aside-link">Восстановление данных с операционных систем Windows</a>            
+                <div class="aside-review-img">
+                    <img title="title" src="img/image/sec18-22.png" alt="" title="">
                 </div>
-                <div class="aside-item aside-news programms">
-                    <h2 class="aside-title">Программы</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <a href="programs.html" class="aside-link">GetDataBack NTFS</a>            
-                    <span class="news-data">Наиболее популярная утилита восстановления информации среди всех существующих програм на сегодняшний день.</span>
-                    <a href="programs.html" class="aside-link">RStudio</a>            
-                    <span class="news-data">Простая, удобная и многофункциональная программа для восстановления удаленных данных с самых различных накопителей.</span>
-                    <a href="programs.html" class="aside-link">Easy Recovery</a>            
-                    <span class="news-data">Качественная программа для восстановления удаленных данных, которая сегодня используется не только специалистами, но и обычными пользователями.</span>
+                <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру
+                    восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в
+                    работе и оперативность в исполнении заказываемых работ.»</div>
+                <div class="aside-review-img">
+                    <img title="title" src="img/image/sec18-22.png" alt="" title="">
                 </div>
-                <div class="aside-item clients">
-<a href="tel:+4952150024" id="number-small" class="number">+7 (495) 215-00-24</a>                    
-                    <h2 class="aside-title">Наши клиенты</h2>
-                    <div class="pulse">
-                        <div class="pulse-line left-line"></div>
-                        <div class="pulse-line righ-line"></div>
-                    </div>
-                    <div class="clients-wrapper">
-                        <img title="title" src="img/image/sec18-12.png" alt="">
-                        <img title="title" src="img/image/sec18-22.png" alt="">
-                        <img title="title" src="img/image/sec18-32.png" alt="">
-                        <img title="title" src="img/image/sec18-42.png" alt="">
-                        <img title="title" src="img/image/sec18-52.png" alt="">
-                        <img title="title" src="img/image/sec18-62.png" alt="">
-                        <img title="title" src="img/image/sec18-72.png" alt="">
-                        <img title="title" src="img/image/sec18-82.png" alt="">
-                    </div>
+                <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру
+                    восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в
+                    работе и оперативность в исполнении заказываемых работ.»</div>
+                <div class="aside-review-img">
+                    <img title="title" src="img/image/sec18-22.png" alt="" title="">
                 </div>
-            </aside>
-<!-- ASIDE RIGHT START -->
-<!-- MAIN TAG START -->    
+                <div class="descr">«Группа компаний "Детский мир" выражает благодарность специализированному центру
+                    восстановления информации Storelab и в частности сотрудникам Вашей компании за профессионализм в
+                    работе и оперативность в исполнении заказываемых работ.»</div>
+                <a href="review.html" class="aside-link">Все отзывы</a>
+            </div>
+            <div class="aside-item aside-news">
+                <h2 class="aside-title">Новости</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
+                </div>
+                <a href="dostavka.html" class="aside-link">Закажите бесплатную доставку и получите скидку 15%</a>
+                <span class="news-data">18 марта 2023</span>
+                <a href="raid.html" class="aside-link">Восстановление данных RAID 1 массива на жестких дисках SAS</a>
+                <span class="news-data">16 марта 2023</span>
+                <a href="news.html" class="aside-link">Интересные случаи из практики по восстановлению данных</a>
+                <span class="news-data">14 марта 2023</span>
+            </div>
+            <div class="aside-item aside-news">
+                <h2 class="aside-title">Статьи и услуги</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
+                </div>
+                <a href="mac_data-recovery.html" class="aside-link">Нюансы восстановления данных с Apple</a>
+                <a href="linux_data-recovery.html" class="aside-link">Восстановление данных с Linux систем</a>
+
+                <a href="windows_data-recovery.html" class="aside-link">Восстановление данных с операционных систем
+                    Windows</a>
+            </div>
+            <div class="aside-item aside-news programms">
+                <h2 class="aside-title">Программы</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
+                </div>
+                <a href="programs.html" class="aside-link">GetDataBack NTFS</a>
+                <span class="news-data">Наиболее популярная утилита восстановления информации среди всех существующих
+                    програм на сегодняшний день.</span>
+                <a href="programs.html" class="aside-link">RStudio</a>
+                <span class="news-data">Простая, удобная и многофункциональная программа для восстановления удаленных
+                    данных с самых различных накопителей.</span>
+                <a href="programs.html" class="aside-link">Easy Recovery</a>
+                <span class="news-data">Качественная программа для восстановления удаленных данных, которая сегодня
+                    используется не только специалистами, но и обычными пользователями.</span>
+            </div>
+            <div class="aside-item clients">
+                <a href="tel:+4952150024" id="number-small" class="number">+7 (495) 215-00-24</a>
+                <h2 class="aside-title">Наши клиенты</h2>
+                <div class="pulse">
+                    <div class="pulse-line left-line"></div>
+                    <div class="pulse-line righ-line"></div>
+                </div>
+                <div class="clients-wrapper">
+                    <img title="title" src="img/image/sec18-12.png" alt="">
+                    <img title="title" src="img/image/sec18-22.png" alt="">
+                    <img title="title" src="img/image/sec18-32.png" alt="">
+                    <img title="title" src="img/image/sec18-42.png" alt="">
+                    <img title="title" src="img/image/sec18-52.png" alt="">
+                    <img title="title" src="img/image/sec18-62.png" alt="">
+                    <img title="title" src="img/image/sec18-72.png" alt="">
+                    <img title="title" src="img/image/sec18-82.png" alt="">
+                </div>
+            </div>
+        </aside>
+        <!-- ASIDE RIGHT START -->
+        <!-- MAIN TAG START -->
     </main>
 
     <div class="form-container twentysecond-block">
-        <div class="title-small">Остались вопросы? Звоните:<a href="tel:+4952150024" class="number">+7 (495) 215-00-24</a></div>
+        <div class="title-small">Остались вопросы? Звоните:<a href="tel:+4952150024" class="number">+7 (495)
+                215-00-24</a></div>
     </div>
 
     <div class="footer-banner">
@@ -707,7 +835,7 @@
 
 
 
-<!-------------------------------------------------- FOOTER  ------------------------------------------->
+    <!-------------------------------------------------- FOOTER  ------------------------------------------->
     <footer class="footer">
         <div class="container">
 
@@ -726,7 +854,8 @@
                         <li><a href="ssd.html" class="aside-link">SSD носители</a></li>
                         <li><a href="flash.html" class="aside-link">USB флешки</a></li>
                         <li><a href="card.html" class="aside-link">Карты памяти</a></li>
-                        <li><a href="vosstanovlenie_vneshnego_zhestkogo_diska.html" class="aside-link">Внешние диски</a></li>
+                        <li><a href="vosstanovlenie_vneshnego_zhestkogo_diska.html" class="aside-link">Внешние диски</a>
+                        </li>
                         <li><a href="vosstanovlenie_dannyh_mac.html" class="aside-link">Apple iMac / MacBook</a></li>
                         <li><a href="raid.html" class="aside-link">Сетевые диски NAS</a></li>
                         <li><a href="virtual_machine.html" class="aside-link">Виртуальные машины</a></li>
@@ -741,12 +870,12 @@
                         <li><a href="regions-rf.html" class="aside-link">Работа с регионами</a></li>
                         <li><a href="questions.html" class="aside-link">Вопросы и ответы</a></li>
                         <li><a href="review.html" class="aside-link">Отзывы клиентов</a></li>
-                        
+
                         <li><a href="article.html" class="aside-link">Статьи и обзоры</a></li>
                         <li><a href="rekvizit.html" class="aside-link">Наши реквизиты</a></li>
                     </ul>
                 </div>
-             
+
             </div>
 
             <div class="footer__clients">
@@ -775,20 +904,21 @@
                         <a href="#" class="prevent">ежедневно с 8:00 до 23:00</a>
                     </div>
                     <div class="footer__contacts-link-descr">
-                        <address><a href="https://www.google.com/maps" class="top-info__addres">Лубянский проезд 15/2, офис 213</a></address>
+                        <address><a href="https://www.google.com/maps" class="top-info__addres">Лубянский проезд 15/2,
+                                офис 213</a></address>
                     </div>
                 </div>
-<a href="index.html" class="logo logo-small">
-                <img title="title" src="img/icons/wd-logo.png" alt="logo" title="logo" class="logo-img">
-                <div>Western<br><span>Digital</span></div>
-            </a>
+                <a href="index.html" class="logo logo-small">
+                    <img title="title" src="img/icons/wd-logo.png" alt="logo" title="logo" class="logo-img">
+                    <div>Western<br><span>Digital</span></div>
+                </a>
             </div>
 
         </div>
 
         <div class="copyright">© 1995-2023 Storelab. Все права защищены.</div>
     </footer>
-<div class="overlay1"></div>
+    <div class="overlay1"></div>
     <div class="thankyou" id="thankyou">
         <h2 class="thankyou-title">Спасибо!</h2>
         <div class="descr">Мы перезвоним вам в течение минуты.</div>
@@ -797,4 +927,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

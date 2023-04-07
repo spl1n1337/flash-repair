@@ -89,6 +89,9 @@ img {
     border: 1px solid $black;
     background: #282828 linear-gradient(rgb(193 193 193 / 30%),rgb(0 0 0));
     box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    ul.dropdown-list {
+        padding: 0 !important;
+    }
     ul:first-child{
         padding: 10px 0;
         display: flex;
@@ -127,8 +130,9 @@ img {
                 }
             }
         }
-        li:hover ul{
+        li:hover ul.dropdown-list {
             height: auto;
+            padding: 10px 0;
         }
 
     }
@@ -911,6 +915,7 @@ img {
                 height: auto;
             }
         }
+        
     }
     .connectors {
         margin-bottom: 15px;
@@ -1509,3 +1514,101 @@ img.border-black {
 input {
     padding: 0.5rem;
 }
+
+#sizer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(206, 206, 206);
+    z-index: 40;
+    text-align: center;
+    padding: 0.125rem;
+    width: 6rem;
+    height: 1.8rem;
+}
+
+.programs-hero {
+    .aside-link {
+        display: block;
+        border-bottom: none !important;
+    }
+}
+.firm {
+    img {
+        max-width: none;       
+        max-height: none;
+        width: auto;
+        height: auto;
+    }
+}
+
+.menu-trigger {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .menu-trigger.active .menu-button > span {
+    background-color: transparent;
+  }
+  .menu-trigger.active .menu-button > span:before,
+  .menu-trigger.active .menu-button > span:after {
+    top: 0;
+  }
+  .menu-trigger.active .menu-button > span:before {
+    transform: rotate(45deg);
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  .menu-trigger.active .menu-button > span:after {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  .menu-trigger.active .menu-button.left-cross > span:before {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  .menu-trigger.active .menu-button.left-cross > span:after {
+    transform: rotate(45deg);
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  
+  .menu-button > span,
+  .menu-button > span:after,
+  .menu-button > span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-button > span {
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    top: 45%;
+  }
+  .menu-button > span:before, .menu-button > span:after {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .menu-button > span:before {
+    top: -360%;
+  }
+  .menu-button > span:after {
+    top: 360%;
+}
+
+.menu-trigger {
+    // display: none;
+    z-index: 2000;
+}
+
+// ------------------------------------------- MEDIA -------------------------------------------
+
+@import 'media.scss'

@@ -72,3 +72,7 @@ form.forEach(element => {
 
 });
 
+$('.menu-trigger').click(function(){
+  $(this).toggleClass('active', 3000);
+  $('.top-nav,.top-nav .container').slideToggle();
+});
